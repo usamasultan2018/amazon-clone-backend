@@ -15,7 +15,7 @@ const userRouter = require("./routes/user");
 
 // Middleware
 // Client -> Middleware -> Server -> Client
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 const DB = "mongodb+srv://usamakhan2018:Khan1432@cluster0.sakhw9v.mongodb.net/?retryWrites=true&w=majority"
